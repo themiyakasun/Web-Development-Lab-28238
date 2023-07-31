@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Circle Area</title>
+</head>
+<body>
+
+<script>
+    const radiusInput = prompt("Enter the radius of the circle:");
+    const radius = parseFloat(radiusInput);
+
+    if (isNaN(radius) || radius <= 0) {
+        alert("Invalid input. Please enter a valid positive number for the radius.");
+    } else {
+        const area = Math.PI * Math.pow(radius, 2);
+        alert(`The area of the circle with radius ${radius} is: ${area.toFixed(2)}`);
+    }
+</script>
+
+</body>
+</html>

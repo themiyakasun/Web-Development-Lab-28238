@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract Year of Birth from NIC</title>
+</head>
+<body>
+
+<script>
+    function getYearOfBirth() {
+        const nicNumber = prompt("Enter Student's NIC number:");
+
+        const yearOfBirth = nicNumber.substr(0, 4);
+
+        if (isNaN(yearOfBirth) || yearOfBirth.length !== 4) {
+            alert("Invalid NIC number or format. Please enter a valid NIC number.");
+            return;
+        }
+
+        alert(`Year of Birth: ${yearOfBirth}`);
+    }
+</script>
+
+<button onclick="getYearOfBirth()">Get Year of Birth</button>
+
+</body>
+</html>
