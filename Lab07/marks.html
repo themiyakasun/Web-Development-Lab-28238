@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    <p id="total"></p>
+    <p id="average"></p>
+    <button onclick="calculateMarks()">Grade</button>
+
+    <script>
+function calculateMarks() {
+    let marks = [];
+    let totalMarks = 0;
+
+    for (let i = 0; i < 5; i++) {
+        let input = prompt(`Enter Mark ${i + 1}:`);
+        let mark = parseFloat(input);
+
+        if (isNaN(mark)) {
+            alert("Invalid input. Please enter a valid number.");
+            return;
+        }
+
+        marks.push(mark);
+        totalMarks += mark;
+    }
+
+    const averageMarks = totalMarks / 5;
+
+    document.getElementById('total').innerText = `Total Marks: ${totalMarks}`;
+    document.getElementById('average').innerText = `Average Marks: ${averageMarks.toFixed(2)}`;
+
+    if (averageMarks > 30) {
+        alert("Congrats! You Passed");
+    } else {
+        alert("Better luck next time");
+    }
+}
+</script>
+
+
+  </body>
+</html>

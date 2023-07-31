@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+
+  <form action="action.php" >
+    <table align="center" style="border: 2px solid #000;">
+      <tr>
+        <th><h1 align="center">Registration form</h1></th>
+      </tr>
+      <tr>
+        <td>FirstName</td>
+        <td><input type="text" name="firstname" /></td>
+      </tr>
+      <tr>
+        <td>LastName</td>
+        <td><input type="text" name="lastname" /></td>
+      </tr>
+      <tr>
+        <td>Mobile Number</td>
+        <td><input type="text" name="number" /></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="male" value="male" />Male
+          <input type="radio" name="female" value="female" />Female
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" /></td>
+      </tr>
+      <tr>
+        <td>Favourite Music</td>
+        <td>
+          <input type="checkbox" name="pop" />POP
+          <input type="checkbox" name="rock" />ROCK
+          <input type="checkbox" name="other" />Other
+        </td>
+      </tr>
+      <tr>
+        <td>Additional Details</td>
+        <td><textarea name="details" cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="terms" />I agree to the terms and
+          conditions
+        </td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td><input type="reset" value="Reset" /></td>
+      </tr>
+    </table>
+  </form>
+
+  <br>
+  <br>
+  <br>
+
+  <form>
+    <table align="center" style="border: 2px solid #000;">
+      <tr>
+        <th>car registration</th>
+      </tr>
+      <tr>
+        <td>Owner</td>
+        <td><input type="text" placeholder="Owner Name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" placeholder="Email"></td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td><input type="text" placeholder="Phone Number"></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td>
+          <select>
+            <option value="">Srilanka</option>
+            <option value="">India</option>
+            <option value="">China</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Car Model</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Manufacture Year</td>
+        <td>
+          <select>
+            <option value="">Select year</option>
+            <option value="">2001</option>
+            <option value="">2002</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Transmission</td>
+        <td>
+          <input type="radio" name="transmission">Manual
+          <input type="radio" name="transmission">Auto
+        </td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td><textarea name="name" rows="8" cols="20"></textarea></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="" value="">I agree to the conditions and terms</td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td><input type="reset" value="Reset" /></td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>
